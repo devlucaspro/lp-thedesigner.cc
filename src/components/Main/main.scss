@@ -1,0 +1,148 @@
+@import '../../app.scss';
+
+main {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding-top: 7rem;
+  padding-bottom: 10rem;
+  position: relative;
+  gap: 1rem;
+  // outline: 1px solid red;
+
+  section.cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.5rem;
+    width: 100%;
+    max-width: 416px;
+    position: relative;
+    // outline: 1px solid red;
+
+
+    img.gradient {
+      position: absolute;
+      z-index: -1;
+    }
+
+    h1 {
+      color: $secondary;
+      text-align: center;
+      font-size: 87px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 127.782%;
+      text-transform: uppercase;
+    }
+
+    a.btn {
+      background-color: $secondary;
+      color: $primary;
+      padding-block: .9rem;
+      width: 100%;
+      max-width: 200px;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .scroll-div {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
+  section.cta-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12rem;
+    position: relative;
+
+    .icon-rotate {
+      animation: rotate 12s ease-in-out infinite;
+    }
+  }
+
+  .cta-img-position {
+    position: relative;
+    top: -40px;
+  }
+
+  .i-mobile {
+    position: absolute;
+    display: none;
+  }
+
+}
+
+@media (max-width: 330px) {
+  main {
+    section.cta {
+
+      h1 {
+        font-size: 60px !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  main {
+    justify-content: center;
+    
+    section.cta {
+      gap: 5rem;
+    }
+
+    section.cta-img {
+      display: none;
+    }
+
+    .i-mobile {
+      display: block;
+      z-index: -1;
+    }
+
+    .i-mobile1 {
+      top: 20px;
+      left: 0;
+      animation: rotate 12s ease-in-out infinite;
+    }
+
+    .i-mobile2 {
+      top: 60%;
+      right: 0;
+    }
+
+  }
+}
+
+@media (max-width: 800px) {
+  main {
+    section.cta {
+
+      h1 {
+        font-size: 72px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+
+}

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+
+$primary: #F7F3EB;
+$secondary: #0A0A0A;
+$grey: #BEBEBE;
+$grey-dark: #2B2B2B;
+
+@font-face {
+  font-family: 'Rosalia';
+  src: url('../public/fonts/Rosalia.otf') format('opentype');
+}
+
+::selection {
+  color: $primary;
+  background-color: $grey-dark;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: $secondary;
+  background-color: $primary;
+}
+
+.container {
+  width: 94%;
+  max-width: 1436px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Rosalia', serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
