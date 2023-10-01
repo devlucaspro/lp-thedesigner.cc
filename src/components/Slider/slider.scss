@@ -1,0 +1,32 @@
+@import '../../app.scss';
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 3rem;
+  background-color: $grey;
+  border: 1px solid $grey-dark;
+  padding-block: 1.3rem;
+  overflow-x: hidden;
+
+  h2 {
+    color: $grey-dark;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 124.3%;
+  }
+}
+
+@media (max-width: 425px) {
+  .slider-container {
+    h2 {
+      font-size: 30px;
+    }
+
+    img {
+      width: 60px;
+    }
+  }
+}
