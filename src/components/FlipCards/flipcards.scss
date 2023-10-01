@@ -3,20 +3,55 @@
 .cards-container {
   
   .card{
-    outline: 1px solid red;
-
     background-color: $grey;
     border: 1px solid $secondary;
-    padding: 1rem 0;
+    height: 120px;
+    overflow: hidden;
+    
 
     h1 {
-      color: var(--black, #0A0A0A);
+      color: $secondary;
       font-family: Rosalia;
       font-size: 75px;
       font-style: normal;
       font-weight: 400;
       line-height: 124.3%;
+      transition: all .4s;
+      padding: 1rem;
+      height: 100%;
+    }
+
+    .color-h1 {
+      background-color: $secondary;
+      color: $primary;
+    }
+
+
+    &:hover h1 {
+      cursor: default;
+      transform: translateY(-100%);
     }
   }
 
+}
+
+@media (max-width: 425px) {
+  .cards-container {
+    .card {
+      h1 {
+        font-size: 40px;
+        padding: 1.3rem 1rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .cards-container {
+    .card {
+      h1 {
+        font-size: 42px;
+      }
+    }
+  }
 }

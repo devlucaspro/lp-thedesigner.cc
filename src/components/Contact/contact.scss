@@ -1,0 +1,136 @@
+@import '../../app.scss';
+
+.contact-container {
+
+  .img-contact {
+    
+    background-image: url('./public/assets/contact-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    position: relative;
+
+    div {
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+      padding-bottom: 3rem;
+
+      h1 {
+        text-align: center;
+        color: $primary;
+        color: $primary;
+        font-family: Rosalia;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 400;
+      }
+    }
+
+  }
+
+  .contact-texts {
+    background: linear-gradient(180deg, #0A0A0A 0%, #010101 0.01%, #0A0A0A 100%);
+
+    .texts {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 94%;
+      max-width: 1436px;
+      margin: 0 auto;
+      padding-top: 8rem;
+      
+      h3 {
+        width: 200px;
+        color: $grey-dark;
+        font-family: Rosalia;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100.8%;
+      }
+
+      p {
+        color: $primary;
+        width: 94%;
+        max-width: 428px;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 124.3%;
+      }
+    }
+
+    .icons {
+      padding-block: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 auto;
+      width: 90%;
+      max-width: 500px;
+
+      svg {
+        &:hover {
+          filter: opacity(.7);
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 425px) {
+  .contact-container {
+    .img-contact {
+
+      div {
+        h1 {
+          font-size: 28px;
+        }
+      }
+    }
+
+    .contact-texts {
+
+      .texts {
+
+        align-items: start;
+        flex-direction: column;
+        gap: 2rem;
+        
+        h3 {
+          font-size: 40px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .icons {
+      a {
+        svg {
+          width: 45px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 380px) and (max-width: 768px) {
+  .contact-container {
+    .img-contact {
+
+      div {
+        h1 {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}

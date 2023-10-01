@@ -33,3 +33,17 @@
     transform: translateX(-50%);
   }
 }
+
+@media (max-width: 425px) {
+  .slider-container {
+    .text-slide {
+      h2 {
+        font-size: 30px;
+      }
+
+      img {
+        width: 70px;
+      }
+    }
+  }
+}

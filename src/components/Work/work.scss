@@ -82,6 +82,7 @@
   .work-container {
     flex-direction: column;
     position: relative;
+    height: 800px;
 
     .work-texts {
       position: absolute;
@@ -98,10 +99,6 @@
             border: 1px solid $primary;
           }
         }
-      }
-
-      a.explore-link {
-        color: $grey-dark;
       }
     }
 

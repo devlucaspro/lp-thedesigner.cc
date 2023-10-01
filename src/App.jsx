@@ -7,6 +7,8 @@ import SliderText from './components/SliderText';
 import Slider from './components/Slider';
 import Work from './components/Work';
 import FlipCards from './components/FlipCards';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 
 const App = () => {
@@ -19,6 +21,8 @@ const App = () => {
       <Slider />
       <Work />
       <FlipCards />
+      <Contact />
+      <Footer />
     </>
   )
 }

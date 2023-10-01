@@ -1,0 +1,15 @@
+@import '../../app.scss';
+
+footer {
+  background-color: $grey-dark;
+  padding: 10px;
+
+  p {
+    color: $primary;
+    text-align: center;
+
+    span {
+      color: #F2DBAD;
+    }
+  }
+}
