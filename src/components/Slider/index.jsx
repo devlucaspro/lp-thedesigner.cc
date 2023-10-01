@@ -5,23 +5,20 @@ const Slider = () => {
   return (
     <section className='slider-container'>
       
-      <h2>Business</h2>
-      <img src="/assets/icon-slider.svg" alt="Icon slider" />
-
-      <h2>Motion</h2>
-      <img src="/assets/icon-slider.svg" alt="Icon slider" />
-
-      <h2>Design</h2>
-      <img src="/assets/icon-slider.svg" alt="Icon slider" />
-
-      <h2>Business</h2>
-      <img src="/assets/icon-slider.svg" alt="Icon slider" />
-
-      <h2>Motion</h2>
-      <img src="/assets/icon-slider.svg" alt="Icon slider" />
-
-      <h2>Design</h2>
-      <img src="/assets/icon-slider.svg" alt="Icon slider" />
+      <div className="text-slide">
+        <img src="./assets/icon-slider.svg" alt="Icon Slider" />
+        <h2>Business</h2>
+        <img src="./assets/icon-slider.svg" alt="Icon Slider" />
+        <h2>Motion</h2>
+        <img src="./assets/icon-slider.svg" alt="Icon Slider" />
+        <h2>Design</h2>
+        <img src="./assets/icon-slider.svg" alt="Icon Slider" />
+        <h2>Business</h2>
+        <img src="./assets/icon-slider.svg" alt="Icon Slider" />
+        <h2>Motion</h2>
+        <img src="./assets/icon-slider.svg" alt="Icon Slider" />
+        <h2>Design</h2>
+      </div>
 
     </section>
   )

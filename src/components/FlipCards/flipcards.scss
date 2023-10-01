@@ -1,0 +1,22 @@
+@import '../../app.scss';
+
+.cards-container {
+  
+  .card{
+    outline: 1px solid red;
+
+    background-color: $grey;
+    border: 1px solid $secondary;
+    padding: 1rem 0;
+
+    h1 {
+      color: var(--black, #0A0A0A);
+      font-family: Rosalia;
+      font-size: 75px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 124.3%;
+    }
+  }
+
+}

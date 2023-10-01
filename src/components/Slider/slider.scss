@@ -4,29 +4,32 @@
   display: flex;
   align-items: center;
   justify-content: start;
-  gap: 3rem;
+  overflow: hidden;
   background-color: $grey;
-  border: 1px solid $grey-dark;
-  padding-block: 1.3rem;
-  overflow-x: hidden;
+  border: 1px solid $secondary;
+  padding: 20px 0;
 
-  h2 {
-    color: $grey-dark;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 124.3%;
+  .text-slide {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    animation: 10s slide linear infinite alternate;
+    
+    h2 {
+      color: $grey-dark;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 124.3%;
+    }
   }
 }
 
-@media (max-width: 425px) {
-  .slider-container {
-    h2 {
-      font-size: 30px;
-    }
-
-    img {
-      width: 60px;
-    }
+@keyframes slide {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
   }
 }

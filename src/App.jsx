@@ -5,6 +5,8 @@ import Main from './components/Main'
 import About from './components/About'
 import SliderText from './components/SliderText';
 import Slider from './components/Slider';
+import Work from './components/Work';
+import FlipCards from './components/FlipCards';
 
 
 const App = () => {
@@ -15,6 +17,8 @@ const App = () => {
       <About />
       <SliderText />
       <Slider />
+      <Work />
+      <FlipCards />
     </>
   )
 }

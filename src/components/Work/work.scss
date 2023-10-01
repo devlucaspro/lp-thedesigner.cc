@@ -1,0 +1,138 @@
+@import '../../app.scss';
+
+.work-container {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding-top: 7rem;
+  padding-bottom: 10rem;
+  gap: 1.5rem;
+
+  .work-texts {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.3rem;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      li {
+        a {
+          color: $secondary;
+          font-family: Inter;
+          font-size: 38.947px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 98.75%;
+        }
+
+        a::after {
+          content: '';
+          display: block;
+          width: 0%;
+          border: 1px solid $secondary;
+          visibility: hidden;
+          transition: all .4s ease-in;
+        }
+
+        &:hover a::after {
+          width: 100%;
+          visibility: visible;
+        }
+      }
+    }
+
+    a.explore-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: $grey;
+      font-weight: bold;
+    }
+  }
+
+  .work-img {
+    img {
+      width: 100%;
+      max-width: 600px;
+    }
+  }
+}
+
+
+@media (max-width: 425px) {
+  .work-container {
+
+    .work-texts {
+      ul {
+        li {
+          a {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .work-container {
+    flex-direction: column;
+    position: relative;
+
+    .work-texts {
+      position: absolute;
+      z-index: 2;
+      padding: 4rem 2.3rem;
+
+      ul {
+        li {
+          a {
+            color: $primary;
+          }
+
+          a::after {
+            border: 1px solid $primary;
+          }
+        }
+      }
+
+      a.explore-link {
+        color: $grey-dark;
+      }
+    }
+
+    .work-img {
+      position: absolute;
+
+      img {
+        max-width: 100%;
+        height: 500px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .work-container {
+    .work-texts {
+      ul {
+        li {
+          a {
+            font-size: 35px;
+          }
+        }
+      }
+    }
+
+    .work-img {
+      img {
+        max-width: 500px;
+      }
+    }
+  }
+}
