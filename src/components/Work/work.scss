@@ -20,6 +20,8 @@
       gap: 1.5rem;
 
       li {
+        width: max-content;
+
         a {
           color: $secondary;
           font-family: Inter;
@@ -39,7 +41,7 @@
         }
 
         &:hover a::after {
-          width: 100%;
+          width: 90%;
           visibility: visible;
         }
       }

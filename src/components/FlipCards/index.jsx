@@ -13,10 +13,10 @@ const Card = ({ firsttext, secondtext }) => {
 const FlipCards = () => {
   return (
     <section className='cards-container'>
-      <Card firsttext={"Being out of the box"} secondtext={"Hi, how you doing?"} />
-      <Card firsttext={"is where ideas start"} secondtext={"Tell us your idea"} />
-      <Card firsttext={"coming true and"} secondtext={"I can help you"} />
-      <Card firsttext={"yeahhhhhh"} secondtext={"Let's do it!"} />
+      <Card firsttext={"Being out of "} secondtext={"how you doing?"} />
+      <Card firsttext={"the box is where"} secondtext={"tell us"} />
+      <Card firsttext={"ideas start coming"} secondtext={"your idea"} />
+      <Card firsttext={"true"} secondtext={"let's do it!"} />
     </section>
   )
 }

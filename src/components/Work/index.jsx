@@ -1,16 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './work.scss';
 
 const Work = () => {
+
+  // Funtion to control the hover effect
+  const [img, setImg] = useState(2);
+  const handleMouseOver = (index) => {
+    setImg(index);
+  };
+
   return (
     <section className='container work-container'>
       <div className='work-texts'>
         <ul>
-          <li><a href="#">Visual identity</a></li>
-          <li><a href="#">Web design</a></li>
-          <li><a href="#">Instagram posts</a></li>
-          <li><a href="#">Logo</a></li>
-          <li><a href="#">Blog</a></li>
+          <li className='link' onMouseOver={() => handleMouseOver(2)}><a href="#">Visual identity</a></li>
+          <li className='link' onMouseOver={() => handleMouseOver(3)}><a href="#">Web design</a></li>
+          <li className='link' onMouseOver={() => handleMouseOver(4)}><a href="#">Instagram posts</a></li>
+          <li className='link' onMouseOver={() => handleMouseOver(5)}><a href="#">Logo</a></li>
+          <li className='link' onMouseOver={() => handleMouseOver(6)}><a href="#">Blog</a></li>
         </ul>
         <a href="#" className='explore-link'>
           <span>Explore more</span>
@@ -22,7 +29,7 @@ const Work = () => {
       </div>
       
       <div className='work-img'>
-        <img src="./assets/work-1.png" alt="Work image 1" />
+        <img className='img-changing' src={`./assets/work-${img}.png`} alt="Work image 1" />
       </div>
     </section>
   )
